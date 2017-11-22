@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<header>
+		<h1 class="page-title">FORM</h1>
+		<p class="page-description">Please complete the following form.</p>
+	</header><br>
+	<form action="/sign-up-form" method="post">
+		<div>
+			<label for="name">First name:</label>
+			<input type="text" id="name" required="required"/>
+		</div><br>
+		<div>
+			<label for="last-name">Last name:</label>
+			<input type="text" id="last-name" required="required"/>
+		</div><br>
+		<div>
+			<label for="mail">E-mail:</label>
+			<input type="email" id="mail" required="required" />
+		</div><br>
+		<div>
+			<label for="date"> Birthday </label>
+			<input type="date" name="date" required="required">
+		</div><br>
+		<div>
+			<label for="fave-sport">Favorite Sport</label>
+			<select required="required">
+				<option value="">None</option>
+				<option value="Basketball">Basketball</option>
+				<option value="Baseball">Baseball</option>
+				<option value="Football">Football</option>
+				<option value="Handball">Handball</option>
+			</select>
+		</div><br>
+		<div>
+			<label for="bio">Write a small biography about you:</label><br>
+			<textarea id="bio"></textarea>
+		</div><br>
+		
+		<div class="button">
+			<button type="submit">Send your message</button>
+		</div><br>
+		<div class="button">
+			<button type="reset" value="Reset">Reset</button>
+		</div><br>
+
+
+	</form>
+
+</body>
+</html>
